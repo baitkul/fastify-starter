@@ -1,0 +1,43 @@
+{
+  "name": "fastify-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava",
+    "start": "NODE_ENV=production node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env-schema": "^2.0.1",
+    "fastify": "^3.11.0",
+    "fastify-autoload": "^3.4.2",
+    "fastify-cli": "^2.7.0",
+    "fastify-cors": "^5.2.0",
+    "fastify-helmet": "^5.2.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.0",
+    "fastify-swagger": "^4.3.0",
+    "fluent-json-schema": "^2.0.3",
+    "lodash": "^4.17.20",
+    "pino-pretty": "^4.5.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "eslint": "^7.19.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "faker": "^5.4.0",
+    "mongodb-memory-server": "^6.9.3",
+    "nodemon": "^2.0.7"
+  }
+}
