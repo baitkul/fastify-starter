@@ -10,6 +10,8 @@ const main = async () => {
 
   server.register(require('./lib/app'), Config)
 
+  await server.ready()
+
   await server.listen(Config.server)
 
   for (const signal of ['SIGINT', 'SIGTERM']) {
