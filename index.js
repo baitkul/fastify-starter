@@ -6,11 +6,11 @@ const main = async () => {
     process.exit(1)
   })
 
-  const server = require('fastify')(Config.fastifyInit)
+  const server = require('fastify')(Config.fastify)
 
   server.register(require('./lib/app'), Config)
 
-  await server.listen(Config.fastify)
+  await server.listen(Config.server)
 
   for (const signal of ['SIGINT', 'SIGTERM']) {
     process.on(signal, () =>
